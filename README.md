@@ -50,8 +50,6 @@ This is a generic plotly horizontal bar chart.
 
 The data is passed into the CreateHBar function.
 
-  ![Bar Chart Code Input](FinalImages/BarInput.PNG)
-
   ![Gauge Chart](FinalImages/Gauge.PNG)
 
  Using 'steps' each segment of the gauge was coloured so there is a visible difference at each step. 
