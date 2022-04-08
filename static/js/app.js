@@ -1,6 +1,5 @@
-// This makes a call to the json data and uses it to populate the dropdown. 
-// This only needs to occur once, since the data does not update live.
-// Then once the dropdown is filled with the initial value, optionChanged is called so that everything populates.
+// A call to the json data and uses it to populate the dropdown. 
+// optionChanged is called so that everything populates.
 d3.json("./data/samples.json").then(function(incomingData) {
     
     //Populate the dropdown
