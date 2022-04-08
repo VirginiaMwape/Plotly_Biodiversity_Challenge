@@ -16,8 +16,8 @@ d3.json("./data/samples.json").then(function(incomingData) {
 });
 
  console.log(item.id);
-// This function is used in optionChanged which feeds it the top 10 OTUs and the labels.
-// From there a bar chart is created.
+
+// Bar chart is created.
 function CreateHBar(x,y,text) {
     var data = [{
         type: 'bar',
@@ -34,8 +34,7 @@ function CreateHBar(x,y,text) {
     Plotly.newPlot('bar', data, layout);
 }
 
-// This function is used in optionChanged which feeds it all 10 OTUs and the labels.
-// From there a bubble chart is created.
+//  Bubble chart.
 function CreateBubble(x,y,text) {
     var data = [{
         x: x,
@@ -57,9 +56,8 @@ function CreateBubble(x,y,text) {
     };
     Plotly.newPlot('bubble', data, layout);
 }
- // Advance Challenge Assignment (Optional
-// This function is used in optionChanged which feeds it the number of weekly belly button washes.
-// From there a gauge chart is created.
+
+// Gauge chart.
 function CreateGauge(num) {
     
     var data = [
@@ -89,8 +87,7 @@ function CreateGauge(num) {
     Plotly.newPlot('gauge', data);
 }
 
-// This function is used in optionChanged which feeds it the metadata.
-// The existing unordered list is cleared and a new one takes the place.
+// Demographic
 function Meta(data) {
     var div = d3.select("#sample-metadata");
     div.html("")
